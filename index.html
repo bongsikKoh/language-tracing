@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f2ea">
+  <title>한글 따라쓰기</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app" aria-live="polite">
+    <section id="startScreen" class="screen start-screen">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">가</span>
+        <div>
+          <p class="eyebrow">터치로 배우는 첫 한글</p>
+          <h1>한글 따라쓰기</h1>
+        </div>
+      </div>
+
+      <div class="preview-strip" aria-hidden="true">
+        <span>🍎</span>
+        <span>🚗</span>
+        <span>🌳</span>
+        <span>🏠</span>
+      </div>
+
+      <button id="startButton" class="primary-button" type="button">
+        시작
+      </button>
+    </section>
+
+    <section id="playScreen" class="screen play-screen hidden">
+      <header class="top-bar">
+        <button id="homeButton" class="icon-button" type="button" aria-label="처음 화면">
+          <span aria-hidden="true">⌂</span>
+        </button>
+        <div class="progress-wrap" aria-label="완성도">
+          <span id="progressText">0%</span>
+          <div class="progress-track">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+        </div>
+        <button id="nextButton" class="icon-button" type="button" aria-label="다음 단어">
+          <span aria-hidden="true">↻</span>
+        </button>
+      </header>
+
+      <div class="picture-panel">
+        <div id="picture" class="picture" role="img" aria-label=""></div>
+      </div>
+
+      <div class="word-panel">
+        <canvas id="guideCanvas" aria-hidden="true"></canvas>
+        <canvas id="drawCanvas" aria-label="회색 글자를 따라 써 보세요"></canvas>
+        <div id="completeBadge" class="complete-badge hidden">잘했어요!</div>
+        <div id="completionActions" class="completion-actions hidden" aria-label="완료 후 선택">
+          <button id="previousWordButton" class="secondary-button" type="button">이전 단어</button>
+          <button id="nextWordButton" class="secondary-button" type="button">다음 단어</button>
+        </div>
+      </div>
+
+      <footer class="control-bar">
+        <button id="clearButton" class="secondary-button" type="button">다시 쓰기</button>
+        <button id="speakButton" class="secondary-button" type="button">읽어주기</button>
+      </footer>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

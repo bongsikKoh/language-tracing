@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#f7f2ea"/>
+  <circle cx="382" cy="126" r="68" fill="#f5bd3f"/>
+  <path d="M96 344c78-98 147-147 207-147 48 0 87 28 117 84 23 42 35 87 35 135H96z" fill="#147d64"/>
+  <text x="256" y="293" text-anchor="middle" font-family="Malgun Gothic, sans-serif" font-size="180" font-weight="900" fill="#fffaf2">가</text>
+</svg>
