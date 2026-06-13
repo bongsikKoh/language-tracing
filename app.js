@@ -286,7 +286,7 @@ function checkProgress() {
   const percent = Math.min(100, Math.round((covered / guidePixelCount) * 100));
   updateProgress(percent);
 
-  if (!complete && percent >= 75) {
+  if (!complete && percent >= 60) {
     complete = true;
     completeBadge.classList.remove("hidden");
     completionActions.classList.remove("hidden");

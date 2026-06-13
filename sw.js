@@ -1,4 +1,4 @@
-const CACHE_NAME = "language-tracing-v9";
+const CACHE_NAME = "language-tracing-v10";
 const FILES = [
   "./",
   "index.html",
